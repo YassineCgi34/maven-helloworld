@@ -1,6 +1,5 @@
 FROM tomcat
-COPY target/maven-helloworld-1.0-SNAPSHOT.jar /usr/local/tomcat/example/ROOT.jar
-COPY target/maven-helloworld-1.0-SNAPSHOT/ /usr/local/tomcat/example/ROOT
+COPY target/maven-helloworld-1.0-SNAPSHOT.jar /app/app.jar
 
 EXPOSE 8080
 

@@ -7,7 +7,10 @@ WORKDIR /app
 # Copier le JAR généré dans le conteneur
 COPY target/maven-helloworld-1.0-SNAPSHOT.jar /app/hello-world.jar
 
+EXPOSE 80
 #Exécuter l'application Java
 CMD ["java", "-jar", "hello-world.jar]
+
+
 
 
